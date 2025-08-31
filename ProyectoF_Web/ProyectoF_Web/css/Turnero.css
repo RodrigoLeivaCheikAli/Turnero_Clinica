@@ -1,0 +1,231 @@
+﻿/* Global Styles */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container */
+.form {
+    width: 83%;
+    max-width: 830px;
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Row layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Column layout */
+.col-lg-6, .col-md-6, .col-12 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 15px;
+}
+
+.col-lg-12, .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Asegura que el grupo ocupe todo el ancho */
+    display: block; /* Permite centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.form-group .current {
+    width: 80%; /* Puedes ajustar esto según lo necesites */
+    max-width: 300px; /* Limita el ancho máximo si es necesario */
+}
+
+
+/* Labels */
+.current {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007ACC; /* Clinic blue */
+    margin-bottom: 8px; /* Espacio entre el label y el control */
+}
+/* Input fields */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007ACC;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+/* Button */
+.button .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.button .btn:hover {
+    background-color: #005c99; /* Darker blue on hover */
+}
+
+
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .col-lg-6, .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    /* Posicionamiento fijo en la pantalla */
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 70px; /* Distancia ajustada desde la parte derecha */
+    /* Efecto de sombra para mayor visibilidad */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+}
+
+    .whatsapp-button img {
+        margin-right: 10px;
+    }
+
+    .whatsapp-button:hover {
+        background-color: #1EBE5D;
+    }
+
+    .whatsapp-button:active {
+        transform: scale(0.95);
+    }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+    .table th,
+    .table td {
+        
+     
+    }
+
+    /* Estilos para las celdas de la tabla */
+    .table th,
+    .table td {
+        padding: 1rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+        border: 1px solid #dee2e6; /* Añadir borde */
+    }
+
+    /* Estilos para el encabezado de la tabla */
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+        background-color: #f8f9fa; /* Fondo del encabezado */
+        font-weight: bold;
+    }
+
+    /* Estilos para las filas alternadas */
+    .table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Color de fondo para filas impares */
+    }
+
+    /* Efecto hover para las filas */
+    .table tbody tr:hover {
+        background-color: #e2e6ea; /* Color de fondo al pasar el mouse */
+    }
+
+    /* Estilo para los botones dentro de la tabla */
+    .table .btn {
+        margin: 0;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Estilos específicos para el botón "Eliminar" */
+    .table .btn-danger {
+        background-color: #dc3545; /* Color de fondo del botón */
+        border-color: #dc3545; /* Color del borde del botón */
+    }
+
+        .table .btn-danger:hover {
+            background-color: #c82333; /* Color de fondo al pasar el mouse */
+            border-color: #bd2130; /* Color del borde al pasar el mouse */
+        }
+
+/* Estilos para el contenedor del botón "Enviar Todos a BD" */
+.button {
+    text-align: right; /* Alinear el botón a la derecha */
+    margin-top: 1rem; /* Espacio superior para separación */
+}
+/* Contenedor para el botón */
+.button-container {
+    display: flex; /* Inicialmente oculto */
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Estilo para el botón "Enviar Todos a BD" */
+.btn-primary {
+    background-color: #007ACC; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+    /* Efecto hover para el botón */
+    .btn-primary:hover {
+        background-color: #0056b3; /* Color al pasar el ratón */
+    }

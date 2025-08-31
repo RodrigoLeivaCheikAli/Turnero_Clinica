@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProyectoF_Web", "ProyectoF_Web\ProyectoF_Web.vbproj", "{42602C22-6BAE-45D7-BFBB-7062D5C296E5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Template_AD", "..\Template_AD\Template_AD.vbproj", "{426A433D-1678-432C-B475-AFCCD8724E60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42602C22-6BAE-45D7-BFBB-7062D5C296E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42602C22-6BAE-45D7-BFBB-7062D5C296E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42602C22-6BAE-45D7-BFBB-7062D5C296E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42602C22-6BAE-45D7-BFBB-7062D5C296E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426A433D-1678-432C-B475-AFCCD8724E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426A433D-1678-432C-B475-AFCCD8724E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426A433D-1678-432C-B475-AFCCD8724E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426A433D-1678-432C-B475-AFCCD8724E60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

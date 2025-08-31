@@ -1,0 +1,102 @@
+﻿/* Global Styles */
+body {
+    background-image: url('/img/young-handsome-physician-medical-robe-with-stethoscope.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6f7ff; /* Color de respaldo si la imagen no se carga */
+}
+
+/* Container for the login form */
+.login-container {
+    width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(5px); /* Agrega un efecto de desenfoque */
+}
+
+/* Title */
+.login-container h2 {
+    color: #007ACC; /* Clinic-like blue */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input Fields */
+.login-container input[type="text"],
+.login-container input[type="password"]
+.login-container input[type="mail"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Button */
+.login-container input[type="submit"],
+.login-container .btnLogin {
+    width: 100%;
+    padding: 12px;
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.login-container input[type="submit"]:hover,
+.login-container .btnLogin:hover {
+    background-color: #005c99; /* Darker blue */
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Link to register */
+.login-container a {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007ACC;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+    }
+}
+/* Input Fields */
+.input-text {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}

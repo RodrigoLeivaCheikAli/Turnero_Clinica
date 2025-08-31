@@ -1,0 +1,106 @@
+﻿/* Contenedor para centrar el perfil del doctor */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    gap: 5px; /* Espacio entre los elementos */
+    margin: 5px;
+}
+
+.doctor-container {
+    margin-top: 10px;
+    visibility: hidden; /* Hace invisible el contenedor */
+     display: flex;
+     align-items: flex-end;
+}
+/* Estilos para el perfil del doctor */
+.doctor-profile {
+   
+    border: none !important; /* Sin borde */
+    border-radius: 15px !important; /* Bordes redondeados */
+    padding: 30px !important; /* Aumentar el padding interno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important; /* Sombra */
+    margin: 10px !important; /* Margen vertical */
+    background-color: #fdfdfd !important; /* Fondo blanco brillante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    position: relative !important; /* Para efectos de superposición */
+    width: 650px !important; /* Ancho aumentado */
+}
+
+/* Efecto hover */
+.doctor-profile:hover {
+    transform: translateY(-5px) !important; /* Elevación al pasar el mouse */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4) !important; /* Sombra intensa */
+}
+
+/* Estilo de imagen del doctor */
+.doctor-profile img {
+    border-radius: 25% !important; /* Imagen redonda */
+    margin-right: 20px !important;
+    width: 140px !important; /* Tamaño aumentado */
+    height: 180px !important; /* Tamaño aumentado */
+    object-fit: cover !important; /* Ajuste perfecto de la imagen */
+    border: 4px solid #ff5733 !important; /* Borde naranja vibrante */
+}
+
+/* Estilo de la información del doctor */
+.doctor-info {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+}
+
+/* Contenedor flexible para la información del doctor */
+.doctor-info div {
+    flex: 1 !important;
+}
+
+/* Encabezado del nombre del doctor */
+.doctor-info-header {
+    font-size: 2em !important; /* Tamaño de fuente aumentado */
+    font-weight: bold !important;
+    color: #2c3e50 !important; /* Color oscuro */
+}
+
+/* Subtítulo con especialidad */
+.doctor-info-subheader {
+    font-size: 1.5em !important; /* Tamaño aumentado */
+    color: #28a745 !important; /* Verde vibrante */
+    margin-top: 5px !important;
+}
+
+/* Información de contacto */
+.doctor-contact-info {
+    font-size: 1.3em !important; /* Tamaño de fuente aumentado */
+    color: #333333 !important; /* Color oscuro */
+    margin-top: 10px !important;
+}
+
+/* Resaltar títulos de contacto */
+.doctor-contact-info strong {
+    color: #007bff !important; /* Azul brilloso para los títulos */
+}
+
+/* Estilo adicional para la tarjeta */
+.doctor-profile::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 10px !important;
+    left: 20px !important;
+    right: 20px !important;
+    height: 5px !important;
+    background: linear-gradient(90deg, #ff5733, #ffbd33) !important; /* Gradiente naranja a amarillo */
+    border-radius: 5px !important; /* Bordes redondeados */
+}
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.doctor-container .doctor-profile {
+    visibility: visible; /* Si quieres mantener visible solo el perfil del doctor */
+    background-color: transparent; /* Hace el fondo transparente */
+    box-shadow: none; /* Quitar sombra */
+}
